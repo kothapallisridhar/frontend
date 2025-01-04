@@ -1,32 +1,24 @@
 import './App.css'
-import { useState } from 'react'
-import Product from './components/Product';
+import Home from './components/Home'
+import Login from './components/Login'
+import Contact from './components/Contact'
+import About from './components/About'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Header from './components/Header'
 
 function App() {
-  let [counter, setCounter] = useState(0);
-  let stock = 10;
-  let prod = {
-    id: 123,
-    name: "Mac Book Pro",
-    price: 300000,
-    nprice: 289999
-  }
 
   return (
     <>
-    <h2>TODO App</h2>
-    <div>
-      <input></input>
-      <button>Add</button>
-    </div>
-    <div>
-      <ul>
-        <li>Learn React</li>
-        <li>Learn Redux</li>
-        <li>Learn Angular</li>
-      </ul>
-    </div>
-    
+    <BrowserRouter>
+      <Header/>
+      <Routes className='routes'>
+        <Route className='routes' path='/' element={<Home/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/about' element={<About/>}></Route>
+        <Route path='/contact' element={<Contact/>}></Route>
+      </Routes>
+    </BrowserRouter>
     </>
   )
   

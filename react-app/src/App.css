@@ -30,3 +30,11 @@ button.minus {
 button:disabled {
   opacity: 0.6;
 }
+
+.link {
+  padding: 5px 5px;
+}
+
+.routes {
+  margin: 20px;
+}
