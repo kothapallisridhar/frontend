@@ -11,7 +11,7 @@ function App(props) {
 
   return (
     <>
-    <h2>{props.children}</h2>
+    <h2 style={{display: 'flex', gap: 20, color: 'orange'}}>{props.children}</h2>
       {users.map(user => {
         return <User key={user.id} id={user.id} name={user.name} age={user.age} place={user.place}/>
       })}
