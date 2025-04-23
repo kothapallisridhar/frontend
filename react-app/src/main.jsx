@@ -7,7 +7,12 @@ const root = createRoot(document.getElementById('root'))
 
 root.render(
   <>
-    <App/>
+    <App>
+      This is App Component
+      <button>Like</button>
+      <button>Share</button>
+      <button>Subscribe</button>
+    </App>
   </>
   
 )
