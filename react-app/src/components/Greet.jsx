@@ -6,11 +6,11 @@ import React from 'react'
 //     )
 // }
 
-export const Greet = (props) => {
+export const Greet = ({name, children}) => {
     return(
         <div>
-            <h2>Hello {props.name}</h2>
-            {props.children}
+            <h2>Hello {name}</h2>
+            {children}
         </div>)
 }
 
