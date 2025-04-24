@@ -1,5 +1,6 @@
 import './App.css'
 import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
 
 
 function App(props) {
@@ -8,7 +9,8 @@ function App(props) {
 
   return (
     <div className='app'>
-      <EventBind/>
+      {/* <EventBind/> */}
+      <ParentComponent/>
     </div>
   )
 }
