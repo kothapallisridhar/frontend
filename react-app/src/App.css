@@ -45,6 +45,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 10px;
+}
+.wrapper button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 4px;
+  color: white;
+}
+
+button.plus {
+  background-color: blue;
+}
+
+button.minus {
+  background-color: red;
 }

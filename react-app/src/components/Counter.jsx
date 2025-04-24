@@ -1,31 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useState } from 'react'
 
-class Counter extends Component {
+const Counter = () => {
+  const [count, setCount] = useState(0)
 
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         count: 0
-      }
-    }
-  increment() {
-    // this.setState({ count: this.state.count + 1 }, () => {
-    //     console.log('Callback value: ', this.state.count)
-    // }) 
-    this.setState((prevState, props) => ({
-        count: prevState.count + 1 
-    }))
-    console.log(this.state.count)
-  }
-  render() {
-    return (
-        <div>
-            <div>Count - {this.state.count}</div>
-            <button onClick={() => { this.increment() }}>Increment</button>
-        </div>
-    )
-  }
+  return (
+    <div className='wrapper'>
+      <button className='plus' onClick={()=> {
+        if(count > 0)
+          setCount(count - 1)
+        }}>-</button>
+      <p>{count}</p>
+      <button className='minus' onClick={()=> {
+        if(count < 10) 
+          setCount(count + 1)
+        }}>+</button>
+    </div>
+  )
 }
 
 export default Counter

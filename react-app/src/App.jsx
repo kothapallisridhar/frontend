@@ -3,6 +3,7 @@ import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
+import Counter from './components/Counter'
 
 const BGColorChange = () => {
   return (
@@ -20,7 +21,8 @@ function App(props) {
 
   return (
     <div className='app'>
-      <BGColorChange/>
+      <Counter/>
+      {/* <BGColorChange/> */}
       {/* <NameList/> */}
       {/* <UserGreeting/> */}
       {/* <EventBind/> */}
