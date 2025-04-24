@@ -9,12 +9,12 @@ const Counter = () => {
       <button className='plus' onClick={()=> {
         if(count > 0)
           setCount(count - 1)
-        }}>-</button>
+        }} disabled={count == 0}>-</button>
       <p>{count}</p>
       <button className='minus' onClick={()=> {
         if(count < 10) 
           setCount(count + 1)
-        }}>+</button>
+        }} disabled={count == 10}>+</button>
     </div>
   )
 }

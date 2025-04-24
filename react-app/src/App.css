@@ -63,3 +63,7 @@ button.plus {
 button.minus {
   background-color: red;
 }
+
+button:disabled {
+  opacity: 0.3;
+}
