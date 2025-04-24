@@ -10,7 +10,9 @@ function App(props) {
 
   return (
     <div className='app'>
-      <Greet/>
+      <Greet name='Ben'/>
+      <Greet name='Clark'/>
+      <Greet name='Kene'/>
       <Welcome/>
       <Hello/>
     </div>
