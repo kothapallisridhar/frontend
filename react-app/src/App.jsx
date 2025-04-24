@@ -2,6 +2,7 @@ import './App.css'
 import User from './User'
 import UserTwo from './UserTwo'
 import { useState } from 'react'
+import Product from './Product'
 
 // function displayMessage() {
 //   alert("Hello")
@@ -19,6 +20,7 @@ function App(props) {
       <br />
       <button onClick={() => setCount(count + 1)}>Count</button>
       <button onClick={() => setCount(0)}>Reset</button>
+      <Product/>
     </>
   )
 }
