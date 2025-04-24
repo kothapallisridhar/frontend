@@ -1,10 +1,10 @@
 import React from 'react'
 
 function NameList() {
-  const names = ['Ben', 'Clark','Glock']
+  const students = [{name: 'Ben', id: 1}, {name: 'Van', id: 2}, {name: 'Zen', id: 3}]
   
   return (
-    <div>{ names.map(name => <h2>{name}</h2>)
+    <div>{ students.map(student => <h2 key={student.id}>{student.name}</h2>)
         }</div>
   )
 }
