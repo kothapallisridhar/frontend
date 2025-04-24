@@ -6,6 +6,12 @@ import React from 'react'
 //     )
 // }
 
-export const Greet = (props) => <h2>Hello {props.name}</h2>
+export const Greet = (props) => {
+    return(
+        <div>
+            <h2>Hello {props.name}</h2>
+            {props.children}
+        </div>)
+}
 
 //export default Greet

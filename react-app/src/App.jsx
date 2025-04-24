@@ -10,10 +10,14 @@ function App(props) {
 
   return (
     <div className='app'>
-      <Greet name='Ben'/>
-      <Greet name='Clark'/>
+      <Greet name='Ben'>
+        <p>This is children props</p>
+      </Greet>
+      <Greet name='Clark'>
+        <button>Click</button>
+        </Greet>
       <Greet name='Kene'/>
-      <Welcome/>
+      <Welcome name='Welt'/>
       <Hello/>
     </div>
   )
