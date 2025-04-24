@@ -2,6 +2,7 @@ import './App.css'
 import { Greet } from './components/Greet'
 import Hello from './components/Hello'
 import Welcome from './components/Welcome'
+import Message from './components/Message'
 
 
 function App(props) {
@@ -16,9 +17,8 @@ function App(props) {
       <Greet name='Clark'>
         <button>Click</button>
         </Greet>
-      <Greet name='Kene'/>
       <Welcome name='Welt'/>
-      <Hello/>
+      <Message/>
     </div>
   )
 }
