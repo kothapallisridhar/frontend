@@ -5,6 +5,7 @@ import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
 import Counter from './components/Counter'
 import Product from './components/Product'
+import ToDo from './components/ToDo'
 
 const BGColorChange = () => {
   return (
@@ -18,16 +19,17 @@ const BGColorChange = () => {
 
 function App(props) {
 
-  let prod1 = {
-    id: 1,
-    name: "iPhone",
-    aprice: 150000,
-    dprice: 120000
-  }
+  // let prod1 = {
+  //   id: 1,
+  //   name: "iPhone",
+  //   aprice: 150000,
+  //   dprice: 120000
+  // }
 
   return (
     <div className='app'>
-      <Product {...prod1}/>
+      <ToDo/>
+      {/* <Product {...prod1}/> */}
       {/* <Counter/> */}
       {/* <BGColorChange/> */}
       {/* <NameList/> */}
