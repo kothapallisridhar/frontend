@@ -1,7 +1,9 @@
 import React from 'react'
 
 const Product = (p) => {
-    const {id, name, aprice, dprice} = p.prodDetails
+  // object destructuring
+  const {id, name, aprice, dprice} = p
+  
   return (
     <div>
         <h2>Product name: {name}</h2>

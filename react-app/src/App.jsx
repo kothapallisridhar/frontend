@@ -27,7 +27,7 @@ function App(props) {
 
   return (
     <div className='app'>
-      <Product prodDetails={prod1}/>
+      <Product {...prod1}/>
       {/* <Counter/> */}
       {/* <BGColorChange/> */}
       {/* <NameList/> */}
