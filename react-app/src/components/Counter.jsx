@@ -10,7 +10,7 @@ const Counter = () => {
         if(count > 0)
           setCount(count - 1)
         }} disabled={count == 0}>-</button>
-      <p>{count}</p>
+      <p className='count'>{count}</p>
       <button className='minus' onClick={()=> {
         if(count < 10) 
           setCount(count + 1)
