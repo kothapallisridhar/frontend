@@ -9,13 +9,14 @@ export default class AppClass extends Component {
         desig: "Architect",
     }
   render() {
+    const {id, name, desig} = this.state;
     // const id = 1;
     // const name = "Sridhar";
     // const desig = "Architect";
 
     return (
       <div>
-        <LayoutClass id={this.state.id} name={this.state.name} desig={this.state.desig}/>
+        <LayoutClass id={id} name={name} desig={desig}/>
       </div>
     )
   }
