@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Footer = ({name}) => {
+export const Footer = ({person}) => {
+
+    const {fname} = person;
   return (
     <div>
-        <h1>Footer: {name}</h1>
+        <h1>My name is: {fname}</h1>
     </div>
   )
 }

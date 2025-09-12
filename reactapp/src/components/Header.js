@@ -1,9 +1,19 @@
 import React from 'react'
 
-export const Header = ({name}) => {
+export const Header = ({person}) => {
+    const {id, fname, lname, desig} = person;
   return (
     <div>
-        <h1>Header: {name}</h1>
+        <div>
+            <span>Id: {id}</span>
+        </div>
+        <div>
+            <span>Name: {fname} {lname}</span>    
+        </div>
+        <div>
+            <span>Desingnation: {desig}</span>    
+        </div>
+
     </div>
   )
 }

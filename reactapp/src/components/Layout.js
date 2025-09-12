@@ -3,12 +3,12 @@ import { Header } from './Header'
 import { Body } from './Body'
 import { Footer } from './Footer'
 
-export const Layout = ({name}) => {
+export const Layout = ({person, name}) => {
   return (
     <>
-      <Header name={name}/>
-      <Body name={name}/>
-      <Footer name={name}/>
+      <Header person={person}/>
+      <Body person={person}/>
+      <Footer person={person}/>
     </>
   )
 }
