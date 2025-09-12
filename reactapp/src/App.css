@@ -17,14 +17,15 @@
 button {
   display: flex;
   flex-direction: column;
-  width: 40px;
+  width: 48px;
   height: 20px;
   margin-left: 10px;
   background-color: black;
+  justify-content: center;
+  text-align: center;
   color: aqua;
   border: unset;
   border-radius: 10px;
-
 }
 .button-container {
  display: flex;
