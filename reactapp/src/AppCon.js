@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './appcon.css'
 import { UnControlled } from './components/UnControlled';
+import { PostsCon } from './components/PostsCon';
+import { Products } from './components/Products';
 
 export const AppCon = () => {
   const [username, setUserName] = useState("");
@@ -38,6 +40,8 @@ export const AppCon = () => {
         </div>
     </div>
      <UnControlled/>
+     <PostsCon/>
+     <Products/>
      </>
   )
 }
