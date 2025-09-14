@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 300px;
+    margin: auto;
+    height: 170px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gainsboro;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+button {
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    border: unset;
+    background-color: black;
+    color: aqua;
+}
+button:hover {
+    color: orange;
+    transition: ease-in 20ms;
+}
+.button-group {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}

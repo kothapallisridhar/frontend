@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { AppSearch } from './AppSearch';
+import { AppCon } from './AppCon';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
-    <AppSearch/>
+    <AppCon/>
   //</React.StrictMode>
 );
 
