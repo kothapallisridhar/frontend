@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: navy;
+    align-items: center;
+}
+.nav-item {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 10px;
+    position: cursor;
+}
