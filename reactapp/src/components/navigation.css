@@ -6,6 +6,7 @@
 .nav-bar {
     display: flex;
     flex-direction: row;
+    justify-content: left;
     height: 50px;
     background-color: navy;
     align-items: center;
