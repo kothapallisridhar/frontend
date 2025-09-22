@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
+import { UserData } from './components/UserData';
 
 const App = () => {
   const usernameRef = useRef();
@@ -26,8 +27,8 @@ const App = () => {
   }
   return (
     <div>
-      {console.log(uuidv4())}
-      {console.log(data)}
+      {/* {console.log(uuidv4())}
+      {console.log(data)} */}
       <div>
         <div className='form-group'>
           <label>User Name</label>
@@ -47,6 +48,9 @@ const App = () => {
         </div>
         <div className='btn-group'>
           <button onClick={dataPostHandler}>Add User</button>
+        </div>
+        <div>
+          <UserData userdata={data}/>
         </div>
       </div>
     </div>
