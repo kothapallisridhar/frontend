@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
 * {
  box-sizing: border-box;
  padding: 0px;   
  margin: 0px;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    font-family: Alan Sans;
+  }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }

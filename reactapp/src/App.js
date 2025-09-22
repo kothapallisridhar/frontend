@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { UserData } from './components/UserData';
+import './App.css'
 
 const App = () => {
   const usernameRef = useRef();
@@ -29,7 +30,7 @@ const App = () => {
     <div>
       {/* {console.log(uuidv4())}
       {console.log(data)} */}
-      <div>
+      <div className='container'>
         <div className='form-group'>
           <label>User Name</label>
           <input type='text' ref={usernameRef}/>
@@ -49,10 +50,10 @@ const App = () => {
         <div className='btn-group'>
           <button onClick={dataPostHandler}>Add User</button>
         </div>
-        <div>
+      </div>
+      <div>
           <UserData userdata={data}/>
         </div>
-      </div>
     </div>
   )
 }
