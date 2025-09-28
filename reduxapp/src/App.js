@@ -1,10 +1,14 @@
+import { Account } from './Account';
 import './App.css';
+import { Form } from './Form';
+import './store';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Redux App</h1>
-    </div>
+    <>
+      <Form/>
+      <Account/>
+    </>
   );
 }
 
