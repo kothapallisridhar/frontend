@@ -9,6 +9,7 @@ export const Form = () => {
   const [amount, setAmount] = useState("");
   const [fullName, setFullName] = useState("");
   const [mobile, setMobile] = useState(null);
+  const [transactionId, updateTransactionId] = useState(0);
     
   return (
     <>
@@ -28,11 +29,19 @@ export const Form = () => {
             <button className='btn btn-primary col-1'
             onClick={() => {
                 dispatch(deposit(amount));
+                updateTransactionId(transactionId + 1)
+                dispatch({type: "ADD_TRANSACTION", payload: {
+                    id: transactionId, amount: amount, date: new Date(), type: "Credit"
+                }})
                 setAmount("");
             }}>Deposit</button>
             <button className='btn btn-warning col-1 mx-2'
             onClick={() => {
                 dispatch(withdraw(amount));
+                updateTransactionId(transactionId + 1)
+                dispatch({type: "ADD_TRANSACTION", payload: {
+                    id: transactionId, amount: amount, date: new Date(), type: "Debit"
+                }})
                 setAmount("");
             }}>Withdraw</button>
         </div>
