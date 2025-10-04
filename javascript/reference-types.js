@@ -16,4 +16,9 @@ var y = "sai";
 console.log(x == y); // string is value(primitive) data type
 
 console.log("array length: ", ar.length);
-console.log("string length: ", x.length)
+console.log("string length: ", x.length);
+
+var s = "Sridhar";
+s = "SaiSuhas";
+s[3] = "k" // strings are immutable
+console.log(s);
