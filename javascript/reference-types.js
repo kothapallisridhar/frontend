@@ -14,3 +14,6 @@ console.log(a==b); // constant pool (primitive types)
 var x = "sai";
 var y = "sai";
 console.log(x == y); // string is value(primitive) data type
+
+console.log("array length: ", ar.length);
+console.log("string length: ", x.length)
