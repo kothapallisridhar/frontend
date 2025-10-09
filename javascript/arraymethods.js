@@ -95,7 +95,7 @@ var maxNum = rr.reduce(function(a, b) {
 }, 0)
 console.log("max num: ", maxNum)
 
-var xr = rr.find(function(a) { // returns a value when the condition is true for teh respective vale
+var xr = rr.find(function(a) { // returns a value when the condition is true for the respective value
     if(a%2 == 0) {
         return true;
     } else {
@@ -103,6 +103,15 @@ var xr = rr.find(function(a) { // returns a value when the condition is true for
     }
 })
 console.log("find: ", xr)
+
+xr = rr.findLast(function(a) { // returns a value when the condition is true for the last respective value
+    if(a%2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+})
+console.log("findLast: ", xr);
 var rs = [4, 6, 2, 8, 10]
 var yr = rs.every(function(a) { // if every element satisfies the condition then it returns true or returns false
     if(a%2 == 0) {
@@ -121,3 +130,7 @@ var ss = rr.some(function(a) { // if some elemets satisfies the condition then i
     }
 })
 console.log("some: ", ss)
+
+var fr = [[2, 4, 6], [4,5, 9, 10], [14, 16, 19, 20]];
+var fl = fr.flat();
+console.log("flat(): ", fl); // combines the arrays of array into a single array
