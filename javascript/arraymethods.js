@@ -95,14 +95,14 @@ var maxNum = rr.reduce(function(a, b) {
 }, 0)
 console.log("max num: ", maxNum)
 
-var xr = rr.find(function(a) { // returns a value when the return is true
+var xr = rr.find(function(a) { // returns a value when the condition is true for teh respective vale
     if(a%2 == 0) {
         return true;
     } else {
         return false;
     }
 })
-console.log(xr)
+console.log("find: ", xr)
 var rs = [4, 6, 2, 8, 10]
 var yr = rs.every(function(a) { // if every element satisfies the condition then it returns true or returns false
     if(a%2 == 0) {
@@ -111,7 +111,7 @@ var yr = rs.every(function(a) { // if every element satisfies the condition then
         return false;
     }
 })
-console.log(yr)
+console.log("every: ", yr)
 
 var ss = rr.some(function(a) { // if some elemets satisfies the condition then it returns true
     if(a%2 == 0) {
@@ -120,4 +120,4 @@ var ss = rr.some(function(a) { // if some elemets satisfies the condition then i
         return false;
     }
 })
-console.log(ss)
+console.log("some: ", ss)
