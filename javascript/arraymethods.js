@@ -33,3 +33,13 @@ dr.toReversed().forEach(function(val, ind, c) {
 })
 
 console.log(dr)
+
+var x = dr.forEach(function(val, ind) { // forEach don't return anything
+    console.log(val)
+})
+console.log(x)
+
+var y = dr.map(function(val, ind) { // map returns an array
+    return val * 2;
+})
+console.log(y)
