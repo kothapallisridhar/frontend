@@ -58,6 +58,9 @@ for(var h=0; h<z.length; h++) {
 
 var d = document.querySelectorAll("h1");
 console.log(d);
-for(var k=0; k<d.length; k++) {
-    d[k].style.color='orange'
-}
+// for(var k=0; k<d.length; k++) {
+//     d[k].style.color='orange'
+// }
+d.forEach(function(el) {
+    el.style.color='turquoise'
+})
