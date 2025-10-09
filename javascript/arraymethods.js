@@ -86,3 +86,11 @@ var r = rr.reduce(function(a,b) {
 }, 0)
 
 console.log(r)
+var maxNum = rr.reduce(function(a, b) {
+    if(a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}, 0)
+console.log("max num: ", maxNum)
