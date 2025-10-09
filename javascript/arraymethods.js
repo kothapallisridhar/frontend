@@ -79,11 +79,11 @@ var sorteddr = dr.sort(function(a, b) {
 })
 console.log("sorted dr: ", sorteddr)
 
-var rr = [10, 20, 38, 18]
+var rr = [10, 24, 16, 11, 20, 23, 21, 38, 18]
 var r = rr.reduce(function(a,b) {
     console.log(a, b);
     return a + b;
-}, 0)
+},0)
 
 console.log(r)
 var maxNum = rr.reduce(function(a, b) {
@@ -94,3 +94,8 @@ var maxNum = rr.reduce(function(a, b) {
     }
 }, 0)
 console.log("max num: ", maxNum)
+
+var xr = rr.find(function(a) { // returns the value when the return is true
+    return a%2 == 0;
+})
+console.log(xr)
