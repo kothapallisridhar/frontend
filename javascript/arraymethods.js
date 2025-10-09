@@ -131,6 +131,6 @@ var ss = rr.some(function(a) { // if some elemets satisfies the condition then i
 })
 console.log("some: ", ss)
 
-var fr = [[2, 4, 6], [4,5, 9, 10], [14, 16, 19, 20]];
+var fr = [[2, 4, 6], [4, 5, 9, 10], [14, 16, 19, 20]];
 var fl = fr.flat();
 console.log("flat(): ", fl); // combines the arrays of array into a single array
