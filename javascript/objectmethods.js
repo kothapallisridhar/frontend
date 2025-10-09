@@ -64,3 +64,10 @@ console.log(d);
 d.forEach(function(el) {
     el.style.color='turquoise'
 })
+
+var students = ["Sri", "Joy", "Mria", "Ioana"]
+for(var l = 0; l<students.length; l++) {
+    var nli = document.createElement("li");
+    nli.innerText=students[l];
+    document.getElementById("u1").appendChild(nli);
+}
