@@ -103,8 +103,8 @@ var xr = rr.find(function(a) { // returns a value when the return is true
     }
 })
 console.log(xr)
-
-var yr = rr.every(function(a) { // if every element satisfies the conditions then it returns true or returns false
+var rs = [4, 6, 2, 8, 10]
+var yr = rs.every(function(a) { // if every element satisfies the condition then it returns true or returns false
     if(a%2 == 0) {
         return true;
     } else {
@@ -112,3 +112,12 @@ var yr = rr.every(function(a) { // if every element satisfies the conditions the
     }
 })
 console.log(yr)
+
+var ss = rr.some(function(a) { // if some elemets satisfies the condition then it returns true
+    if(a%2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+})
+console.log(ss)
