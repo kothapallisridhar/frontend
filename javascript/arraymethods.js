@@ -19,7 +19,17 @@ ar.splice(3,2,'sri','cars');
 console.log(ar)
 ar.splice(3,0,'hi')
 console.log(ar)
-
-ar.forEach(function(v, i) {
+var dr = [10, 30, 40, 23, 22, 9, 11]
+dr.forEach(function(v, i) {
     console.log("i: ", i, " val: ", v)
 })
+
+dr.reverse().forEach(function(v) {
+    console.log(v);
+})
+
+dr.toReversed().forEach(function(val, ind, c) {
+    console.log(ind, val)
+})
+
+console.log(dr)
