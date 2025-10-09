@@ -95,7 +95,20 @@ var maxNum = rr.reduce(function(a, b) {
 }, 0)
 console.log("max num: ", maxNum)
 
-var xr = rr.find(function(a) { // returns the value when the return is true
-    return a%2 == 0;
+var xr = rr.find(function(a) { // returns a value when the return is true
+    if(a%2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
 })
 console.log(xr)
+
+var yr = rr.every(function(a) { // if every element satisfies the conditions then it returns true or returns false
+    if(a%2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+})
+console.log(yr)
