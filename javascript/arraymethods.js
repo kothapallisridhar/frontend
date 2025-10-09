@@ -21,18 +21,18 @@ ar.splice(3,2,'sri','cars');
 console.log(ar)
 ar.splice(3,0,'hi')
 console.log(ar)
-var dr = [10, 30, 40, 23, 22, 9, 11]
+var dr = [10, 20, 38, 18, 59, 99, 121, 28, 57, 44, 88, 22]
 dr.forEach(function(v, i) {
     console.log("i: ", i, " val: ", v)
 })
 
-dr.reverse().forEach(function(v) {
-    console.log(v);
-})
+// dr.reverse().forEach(function(v) {
+//     console.log(v);
+// })
 
-dr.toReversed().forEach(function(val, ind, c) {
-    console.log(ind, val)
-})
+// dr.toReversed().forEach(function(val, ind, c) {
+//     console.log(ind, val)
+// })
 
 console.log(dr)
 
@@ -60,7 +60,7 @@ var prodsHighPrice = products.filter(function(product) {
     return product.price > 500;
 })
 
-console.log(dr.filter(num => num > 25)) 
+//console.log(dr.filter(num => num > 25)) 
 console.log("----------products wit price greater than 500-----------")
 console.log(prodsHighPrice)
 
@@ -69,3 +69,12 @@ var z = dr.filter(function(val, ind) {
     return ind;
 })
 console.log(z)
+console.log("dr: ", dr)
+var sorteddr = dr.sort(function(a, b) {
+    if(a > b) {
+        return 1;
+    } else {
+        return -1;
+    }
+})
+console.log("sorted dr: ", sorteddr)
