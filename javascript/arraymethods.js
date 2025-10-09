@@ -78,3 +78,11 @@ var sorteddr = dr.sort(function(a, b) {
     }
 })
 console.log("sorted dr: ", sorteddr)
+
+var rr = [10, 20, 38, 18]
+var r = rr.reduce(function(a,b) {
+    console.log(a, b);
+    return a + b;
+}, 0)
+
+console.log(r)
