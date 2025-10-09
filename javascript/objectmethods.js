@@ -38,3 +38,20 @@ iel.innerText = "This is India"
 var y = document.getElementById("d1");
 console.log(y);
 y.appendChild(iel)
+var x = document.getElementsByTagName("h1");
+console.log(x);
+x[0].style.color='red'
+for(var i = 0; i<x.length; i++) {
+    x[i].style.color='red'
+}
+
+var y = document.getElementsByTagName("h2");
+for(var j=0; j<y.length; j++) {
+    y[j].style.color='blue'
+}
+
+var z = document.getElementsByClassName("abc");
+console.log(z);
+for(var h=0; h<z.length; h++) {
+    z[h].style.backgroundColor="lightgreen";
+}
