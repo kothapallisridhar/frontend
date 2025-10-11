@@ -8,7 +8,7 @@ function abc() {
 }
 abc();
 //b = 200;
-console.log(a);
+console.log("outside a: ", a);
 /*
 hoisting
 Running JavaScript code in two phases
