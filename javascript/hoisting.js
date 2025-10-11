@@ -3,7 +3,8 @@ console.log(a);
 var a = 100;
 
 function abc() {
-    var a = 200;
+    //var a = 200;
+    a = 200;
     console.log("a: ", a)
 }
 abc();
