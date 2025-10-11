@@ -20,3 +20,25 @@ Running JavaScript code in two phases
         only declarations(not initializations)
     2. Execution phase
  */
+
+    var ar = [33, 44, 55];
+    var br = [];
+    var cr = [];
+
+    for(var i = 0; i <= ar.length-1; i++) {
+        br.push(function() {console.log("hi", i)})
+    }
+    console.log(br);
+    br[0]();
+    br[1]();
+    br[2]();
+
+    ar.forEach(function(a, j) {
+        cr.push(function() {console.log("HI", j)})
+    })
+    console.log(cr)
+    cr[0]();
+    cr[1]();
+    cr[2]();
+
+    // closure => binding outer function scope values to inner function under closure scope
