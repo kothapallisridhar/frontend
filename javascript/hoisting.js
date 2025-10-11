@@ -4,8 +4,10 @@ var a = 100;
 
 function abc() {
     //var a = 200;
-    a = 200;
-    console.log("a: ", a)
+    a = 333;
+    console.log("inside function: a: ", a)
+    var a = 200;
+    //a = 200;
 }
 abc();
 //b = 200;
