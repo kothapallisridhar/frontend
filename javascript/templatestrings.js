@@ -13,4 +13,18 @@ var pattern = `    *
 * * * * *`
 
 console.log(mstr);  
-console.log(pattern)          
+console.log(pattern)  
+var skill = 'Frontend';
+var technology = 'React';
+
+var student = {
+    firstname: 'Ioana',
+    lastname: 'Buboiu',
+    age: 30,
+    city: 'Bucharest',
+    country: 'Romania',
+    skill,
+    technology
+}
+
+console.log(student)
