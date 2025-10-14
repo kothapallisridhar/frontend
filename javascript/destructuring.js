@@ -63,3 +63,29 @@ var ar = [12,14, 15, 16, 17, 19, 22, 23, 24, 25]
 
 var [a, b, ...c] = ar; // ...c => rest variable
 console.log(a, b, c)
+
+delete ar[1]
+console.log(ar)
+
+var ob4 = {
+    firstname: 'Ioana',
+    lastname: 'Grace',
+    gender: 'female',
+    thumbnail: 'https://randomuser.me/api/portraits/women/29.jpg',
+    age: 30,
+    country: 'Romania'
+}
+Object.freeze(ob4)
+//delete ob4.thumbnail;
+var {thumbnail, ...ob5} = ob4;
+console.log(ob5)
+
+function add(a, b, ...c) {
+    console.log(a,b,c);
+}
+
+add(10, 20)
+add(10, 20, 30)
+add(10, 20, 40, 50)
+
+
