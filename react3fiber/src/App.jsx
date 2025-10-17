@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Clicker from './Clicker.jsx'
 
-function App() {
+function App({children}) {
 
   const [hasClicker, setHasClicker] = useState(true);
 
@@ -11,6 +11,7 @@ function App() {
 
   return (
     <>
+      {children}
       <button onClick={toggleClicker}>{hasClicker ? 'Hide Clicker' : 'Show Clicker'}</button>
       {hasClicker && 
       <>
