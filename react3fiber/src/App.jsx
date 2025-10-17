@@ -12,10 +12,12 @@ function App() {
   return (
     <>
       <button onClick={toggleClicker}>{hasClicker ? 'Hide Clicker' : 'Show Clicker'}</button>
-      {hasClicker && <>
-      <Clicker keyName='countA'/>
-      <Clicker keyName='countB'/>
-      <Clicker keyName='countC'/></>}
+      {hasClicker && 
+      <>
+      <Clicker keyName='countA' color='crimson'/>
+      <Clicker keyName='countB' color='cyan'/>
+      <Clicker keyName='countC' color='darkOrchid'/>
+      </>}
     </>
   )
 }
