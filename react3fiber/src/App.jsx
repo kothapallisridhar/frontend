@@ -22,6 +22,8 @@ function App({children}) {
       {hasClicker && 
       <>
       <Clicker increment={increment} keyName='countA' color={`hsl(${Math.random() * 360}deg, 100%, 70%)`}/>
+      <Clicker increment={increment} keyName='countB' color={`hsl(${Math.random() * 360}deg, 100%, 70%)`}/>
+      <Clicker increment={increment} keyName='countC' color={`hsl(${Math.random() * 360}deg, 100%, 70%)`}/>
       </>}
     </>
   )
