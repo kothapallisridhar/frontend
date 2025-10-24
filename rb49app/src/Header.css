@@ -1,0 +1,16 @@
+.mynav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(163, 188, 196);
+}
+
+.mynav ul {
+  display: flex;
+  padding: 0px;
+}
+
+.mynav ui li {
+  list-style: none;
+  width: 100px;
+}

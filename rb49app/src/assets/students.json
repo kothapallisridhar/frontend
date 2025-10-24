@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Aarav Mehta",
+    "gender": "Male",
+    "age": 15,
+    "fatherName": "Rohit Mehta",
+    "motherName": "Sneha Mehta"
+  },
+  {
+    "name": "Diya Sharma",
+    "gender": "Female",
+    "age": 14,
+    "fatherName": "Amit Sharma",
+    "motherName": "Priya Sharma"
+  },
+  {
+    "name": "Ishaan Verma",
+    "gender": "Male",
+    "age": 16,
+    "fatherName": "Kunal Verma",
+    "motherName": "Neha Verma"
+  },
+  {
+    "name": "Ananya Singh",
+    "gender": "Female",
+    "age": 13,
+    "fatherName": "Rajesh Singh",
+    "motherName": "Pooja Singh"
+  },
+  {
+    "name": "Rohan Nair",
+    "gender": "Male",
+    "age": 17,
+    "fatherName": "Suresh Nair",
+    "motherName": "Lakshmi Nair"
+  },
+  {
+    "name": "Meera Das",
+    "gender": "Female",
+    "age": 14,
+    "fatherName": "Sanjay Das",
+    "motherName": "Kavita Das"
+  },
+  {
+    "name": "Arjun Patel",
+    "gender": "Male",
+    "age": 15,
+    "fatherName": "Vikas Patel",
+    "motherName": "Rita Patel"
+  },
+  {
+    "name": "Kavya Reddy",
+    "gender": "Female",
+    "age": 16,
+    "fatherName": "Mahesh Reddy",
+    "motherName": "Anita Reddy"
+  },
+  {
+    "name": "Devansh Kapoor",
+    "gender": "Male",
+    "age": 14,
+    "fatherName": "Nitin Kapoor",
+    "motherName": "Shalini Kapoor"
+  },
+  {
+    "name": "Sneha Iyer",
+    "gender": "Female",
+    "age": 15,
+    "fatherName": "Sundar Iyer",
+    "motherName": "Deepa Iyer"
+  }
+]
