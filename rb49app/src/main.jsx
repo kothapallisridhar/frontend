@@ -1,6 +1,5 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import AppProps from "./props/AppProps.jsx";
+import AppProducts from "./products/AppProducts";
 
-createRoot(document.getElementById("root")).render(<AppProps />);
+createRoot(document.getElementById("root")).render(<AppProducts />);
