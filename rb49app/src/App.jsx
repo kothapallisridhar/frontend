@@ -1,3 +1,4 @@
+import StudentForm from "./forms/StudentForm";
 import StudentsTable from "./students/StudentsTable";
 import TodoList from "./todos/TodoList";
 
@@ -6,7 +7,7 @@ function App() {
     <div>
       <h1>This is App</h1>
 
-      <TodoList />
+      <StudentForm />
     </div>
   );
 }
