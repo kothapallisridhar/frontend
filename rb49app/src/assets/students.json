@@ -68,5 +68,145 @@
     "age": 15,
     "fatherName": "Sundar Iyer",
     "motherName": "Deepa Iyer"
+  },
+  {
+    "name": "Yash Gupta",
+    "gender": "Male",
+    "age": 16,
+    "fatherName": "Manoj Gupta",
+    "motherName": "Sunita Gupta"
+  },
+  {
+    "name": "Riya Pillai",
+    "gender": "Female",
+    "age": 14,
+    "fatherName": "Anil Pillai",
+    "motherName": "Latha Pillai"
+  },
+  {
+    "name": "Aditya Khanna",
+    "gender": "Male",
+    "age": 15,
+    "fatherName": "Rakesh Khanna",
+    "motherName": "Nisha Khanna"
+  },
+  {
+    "name": "Tanya Bansal",
+    "gender": "Female",
+    "age": 13,
+    "fatherName": "Sandeep Bansal",
+    "motherName": "Manju Bansal"
+  },
+  {
+    "name": "Karan Joshi",
+    "gender": "Male",
+    "age": 16,
+    "fatherName": "Ravi Joshi",
+    "motherName": "Rekha Joshi"
+  },
+  {
+    "name": "Aisha Dutta",
+    "gender": "Female",
+    "age": 14,
+    "fatherName": "Ashok Dutta",
+    "motherName": "Ritu Dutta"
+  },
+  {
+    "name": "Vivaan Sinha",
+    "gender": "Male",
+    "age": 17,
+    "fatherName": "Harish Sinha",
+    "motherName": "Sudha Sinha"
+  },
+  {
+    "name": "Nisha Menon",
+    "gender": "Female",
+    "age": 15,
+    "fatherName": "Kiran Menon",
+    "motherName": "Leena Menon"
+  },
+  {
+    "name": "Arnav Chatterjee",
+    "gender": "Male",
+    "age": 13,
+    "fatherName": "Subir Chatterjee",
+    "motherName": "Anindita Chatterjee"
+  },
+  {
+    "name": "Saanvi Ghosh",
+    "gender": "Female",
+    "age": 16,
+    "fatherName": "Partha Ghosh",
+    "motherName": "Swati Ghosh"
+  },
+  {
+    "name": "Hriday Malhotra",
+    "gender": "Male",
+    "age": 14,
+    "fatherName": "Deepak Malhotra",
+    "motherName": "Preeti Malhotra"
+  },
+  {
+    "name": "Mira Bhattacharya",
+    "gender": "Female",
+    "age": 15,
+    "fatherName": "Sourav Bhattacharya",
+    "motherName": "Ruma Bhattacharya"
+  },
+  {
+    "name": "Reyansh Tiwari",
+    "gender": "Male",
+    "age": 13,
+    "fatherName": "Dinesh Tiwari",
+    "motherName": "Alka Tiwari"
+  },
+  {
+    "name": "Anika Rao",
+    "gender": "Female",
+    "age": 14,
+    "fatherName": "Prakash Rao",
+    "motherName": "Madhuri Rao"
+  },
+  {
+    "name": "Sarthak Jain",
+    "gender": "Male",
+    "age": 15,
+    "fatherName": "Vijay Jain",
+    "motherName": "Pallavi Jain"
+  },
+  {
+    "name": "Ira Banerjee",
+    "gender": "Female",
+    "age": 16,
+    "fatherName": "Anupam Banerjee",
+    "motherName": "Shreya Banerjee"
+  },
+  {
+    "name": "Rudra Shetty",
+    "gender": "Male",
+    "age": 17,
+    "fatherName": "Ganesh Shetty",
+    "motherName": "Vidya Shetty"
+  },
+  {
+    "name": "Aarohi Deshmukh",
+    "gender": "Female",
+    "age": 14,
+    "fatherName": "Suhas Deshmukh",
+    "motherName": "Aparna Deshmukh"
+  },
+  {
+    "name": "Laksh Bhatia",
+    "gender": "Male",
+    "age": 15,
+    "fatherName": "Rajiv Bhatia",
+    "motherName": "Meena Bhatia"
+  },
+  {
+    "name": "Myra Kaul",
+    "gender": "Female",
+    "age": 13,
+    "fatherName": "Vivek Kaul",
+    "motherName": "Rashmi Kaul"
   }
 ]
