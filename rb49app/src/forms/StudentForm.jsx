@@ -7,6 +7,7 @@ const StudentForm = () => {
     initialValues: {
       firstname: "",
       lastname: "",
+      password: "",
       gender: "",
       techs: [],
       country: "",
@@ -14,7 +15,18 @@ const StudentForm = () => {
     validationSchema: Yup.object({
       firstname: Yup.string()
         .required("First Name is mandatory")
-        .min(3, "first name should be min 3 letters"),
+        .min(3, "First name should be min 3 letters"),
+      lastname: Yup.string()
+        .required("First Name is mandatory")
+        .min(3, "Last name should be min 3 letters"),
+      password: Yup.string()
+        .required("Must enter password")
+        .matches(
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+          {
+            message: "Check password",
+          }
+        ),
     }),
     onSubmit: (values) => {
       console.log(values);
@@ -32,14 +44,35 @@ const StudentForm = () => {
           onBlur={studentForm.onBlur}
         />
         <div>
-          {studentForm.errors.firstname && <div>Firstname is mandatory</div>}
+          {studentForm.touched.firstname && studentForm.errors.firstname && (
+            <div>{studentForm.errors.firstname}</div>
+          )}
         </div>
         <br />
         <input
           type="text"
           name="lastname"
           onChange={studentForm.handleChange}
+          onBlur={studentForm.onBlur}
         />
+        <div>
+          {studentForm.touched.lastname && studentForm.errors.firstname && (
+            <div>{studentForm.errors.lastname}</div>
+          )}
+        </div>
+        <br />
+        <br />
+        <input
+          type="password"
+          name="password"
+          onChange={studentForm.handleChange}
+          onBlur={studentForm.onBlur}
+        />
+        <div>
+          {studentForm.touched.password && studentForm.errors.password && (
+            <div>{studentForm.errors.password}</div>
+          )}
+        </div>
         <br />
         <input
           type="radio"
