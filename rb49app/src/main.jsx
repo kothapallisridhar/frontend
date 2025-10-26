@@ -8,7 +8,11 @@ import StudentsTable from "./students/StudentsTable";
 import Products from "./products/Products";
 import RecipesMaster from "./recipes/RecipesMaster";
 import RecipeDetails from "./recipes/RecipeDetails";
+import AppRedux from "./AppRedux";
+import { store } from "./store/store";
+import { Provider } from "react-redux";
 
+/*
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +45,10 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+*/
+
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <Provider store={store}>
+    <AppRedux />
+  </Provider>
 );
