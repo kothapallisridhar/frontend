@@ -9,7 +9,8 @@ import Products from "./products/Products";
 import RecipesMaster from "./recipes/RecipesMaster";
 import RecipeDetails from "./recipes/RecipeDetails";
 import AppRedux from "./AppRedux";
-import { store } from "./store/store";
+//import { store } from "./store/store";
+import { store } from "./app/store";
 import { Provider } from "react-redux";
 
 /*
