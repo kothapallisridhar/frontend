@@ -2,12 +2,16 @@ import React from "react";
 //import Counter from "./store/Counter";
 import Counter from "./features/counter/Counter";
 import Todolist from "./features/todolist/Todolist";
+import ProductsNew from "./features/products/ProductsNew";
+import Recipes from "./features/recipes/Recipes";
 //import Todolist from "./store/Todolist";
 
 function AppRedux() {
   return (
     <div className="border border-5 p-3 m-2 border-success">
       <h1>This is App</h1>
+      <ProductsNew></ProductsNew>
+      <Recipes></Recipes>
       {/* <Counter></Counter> */}
       <Counter></Counter>
       {/* <Todolist></Todolist> */}

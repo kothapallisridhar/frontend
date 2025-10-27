@@ -8,7 +8,7 @@ function Todolist() {
   var [newTodo, setNewTodo] = useState("");
   var dispatch = useDispatch();
   return (
-    <div className="border border-3 border-info m-2">
+    <div className="border border-3 border-primary m-2">
       <h1>Todolist</h1>
       <input
         type="text"
