@@ -11,7 +11,7 @@ export const TodoList = () => {
     { title: "Munich", id: uuidv4(), status: false },
     { title: "Berlin", id: uuidv4(), status: false },
   ]);
-
+  console.log("Todos:", todos);
   function deleteTodo(id) {
     setTodos((cv) => {
       return cv.filter((todo) => {
