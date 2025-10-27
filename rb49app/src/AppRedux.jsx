@@ -1,6 +1,7 @@
 import React from "react";
 //import Counter from "./store/Counter";
 import Counter from "./features/counter/Counter";
+import Todolist from "./features/todolist/Todolist";
 //import Todolist from "./store/Todolist";
 
 function AppRedux() {
@@ -10,6 +11,7 @@ function AppRedux() {
       {/* <Counter></Counter> */}
       <Counter></Counter>
       {/* <Todolist></Todolist> */}
+      <Todolist></Todolist>
     </div>
   );
 }
