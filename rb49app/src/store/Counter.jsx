@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { incCount, decCount } from "./actioncreators";
 
 function Counter(props) {
   console.log("Counter component::", props);
@@ -9,7 +10,7 @@ function Counter(props) {
       <button
         className="btn btn-primary m-2"
         onClick={() => {
-          props.dispatch({ type: "INC" });
+          props.dispatch(incCount());
         }}
       >
         Increment
@@ -17,7 +18,7 @@ function Counter(props) {
       <button
         className="btn btn-warning m-2"
         onClick={() => {
-          props.dispatch({ type: "DEC" });
+          props.dispatch(decCount());
         }}
       >
         Decrement
