@@ -5,17 +5,16 @@ import Todolist from "./features/todolist/Todolist";
 import ProductsNew from "./features/products/ProductsNew";
 import Recipes from "./features/recipes/Recipes";
 //import Todolist from "./store/Todolist";
+import { Link, Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function AppRedux() {
   return (
     <div className="border border-5 p-3 m-2 border-success">
-      <h1>This is App</h1>
-      <ProductsNew></ProductsNew>
-      <Recipes></Recipes>
-      {/* <Counter></Counter> */}
-      <Counter></Counter>
-      {/* <Todolist></Todolist> */}
-      <Todolist></Todolist>
+      <div>
+        <Navbar></Navbar>
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 }

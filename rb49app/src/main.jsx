@@ -3,7 +3,7 @@ import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import TodoList from "./todos/TodoList";
-import Counter from "./counter/Counter";
+//import Counter from "./counter/Counter";
 import StudentsTable from "./students/StudentsTable";
 import Products from "./products/Products";
 import RecipesMaster from "./recipes/RecipesMaster";
@@ -12,12 +12,14 @@ import AppRedux from "./AppRedux";
 //import { store } from "./store/store";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
+import Counter from "./features/counter/Counter";
+import Leads from "./features/leads/Leads";
+import AddLead from "./features/leads/AddLead";
 
-/*
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>,
+    element: <AppRedux></AppRedux>,
     children: [
       {
         path: "/counter",
@@ -43,13 +45,20 @@ const router = createBrowserRouter([
         path: "/recipeDetails/:id",
         element: <RecipeDetails></RecipeDetails>,
       },
+      {
+        path: "/leads",
+        element: <Leads></Leads>,
+      },
+      {
+        path: "/addlead",
+        element: <AddLead></AddLead>,
+      },
     ],
   },
 ]);
-*/
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <AppRedux />
+    <RouterProvider router={router}></RouterProvider>
   </Provider>
 );
