@@ -15,6 +15,7 @@ import { Provider } from "react-redux";
 import Counter from "./features/counter/Counter";
 import Leads from "./features/leads/Leads";
 import AddLead from "./features/leads/AddLead";
+import EditLead from "./features/leads/EditLead";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/addlead",
         element: <AddLead></AddLead>,
+      },
+      {
+        path: "/editlead/:id",
+        element: <EditLead></EditLead>,
       },
     ],
   },

@@ -56,6 +56,12 @@ function Leads() {
                   <td>{lead.status}</td>
                   <td>{lead.createdAt}</td>
                   <td>
+                    <Link
+                      className="btn btn-warning m-2"
+                      to={`/editLead/${lead["_id"]}`}
+                    >
+                      Edit
+                    </Link>
                     <button
                       className="btn btn-danger"
                       onClick={() => {
