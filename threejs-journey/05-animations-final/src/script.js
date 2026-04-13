@@ -32,6 +32,7 @@ const sizes = {
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
 camera.position.z = 3;
 scene.add(camera);
+//camera.lookAt(new THREE.Vector3(1, -1, 1));
 
 /**
  * Renderer
@@ -46,8 +47,18 @@ renderer.setSize(sizes.width, sizes.height);
  */
 gsap.to(mesh.position, { duration: 1, delay: 1, x: 2 });
 gsap.to(mesh.position, { duration: 1, delay: 2, x: 0 });
+gsap.to(mesh.rotation, { duration: 1, delay: 1, z: 1 });
+gsap.to(mesh.rotation, { duration: 1, delay: 2, z: 0 });
+
+const clock = new THREE.Clock();
 
 const tick = () => {
+  // const elapsedTime = clock.getElapsedTime();
+
+  // mesh.position.y = Math.sin(elapsedTime);
+  // mesh.position.x = Math.cos(elapsedTime);
+  // camera.lookAt(mesh.position);
+
   // Render
   renderer.render(scene, camera);
 
